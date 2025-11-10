@@ -3,7 +3,7 @@ Alternate title: "Yes I really did this for fun"
 ------------------------------------------------
 I've been recently playing around with and enjoying modern
 c++23 features, and it inspired me to go back and rewrite
-some of my old college assingments.
+some of my old college assignments.
 
 There's no real other "point" to this, you can just come see
 how my style has changed and improved.
@@ -13,7 +13,7 @@ Building
 This project uses CMake >= 3.16, and C++23. I only tested with
 gcc, but I have no reason to doubt it'd work on clang or msvc
 either. If it breaks make an issue.
-```
+```bash
 git clone https://github.com/4jamesccraven/cpp-archive.git
 cd cpp-archive
 mkdir build && cd build
