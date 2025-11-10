@@ -1,0 +1,6 @@
+# CMake and Clang
+build/**
+.cache/**
+
+# Compile commands symlink for IDEs
+compile_commands.json
