@@ -25,3 +25,4 @@ main binary. A flag to list available projects is coming eventually.
 
 This is the current list of projects:
 - 'fortune': an interactive fortune teller
+- 'nim': a game about removing objects from a pile ([wikipedia](https://en.wikipedia.org/wiki/Nim))
