@@ -58,7 +58,7 @@ auto to_lower(const R& r)
     return result;
 }
 
-void basic_prompt(std::string_view prompt_text, std::string& buffer)
+void prompt(std::string_view prompt_text, std::string& buffer)
 {
     // Prompt the user
     std::println(stderr, "{}", prompt_text);
@@ -90,7 +90,7 @@ bool prompt(std::string_view prompt_text,
     // Continually prompt user until valid input is obtained.
     while (true)
     {
-        basic_prompt(prompt_text, input_buf);
+        prompt(prompt_text, input_buf);
 
         // If the user says nothing, and the caller provides a default,
         // return the default value
@@ -132,7 +132,7 @@ std::string prompt(std::string_view prompt_text,
 
     while (true)
     {
-        basic_prompt(prompt_text, input_buf);
+        prompt(prompt_text, input_buf);
 
         // If the user says nothing, and the caller provides a default,
         // return the default value

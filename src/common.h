@@ -29,7 +29,7 @@ struct ProjectDispatch
 ///
 /// @param prompt_text The prompt to display
 /// @param buffer Where to send user input to.
-void basic_prompt(std::string_view prompt_text, std::string& buffer);
+void prompt(std::string_view prompt_text, std::string& buffer);
 
 /// Prompt the user for a value that is one of two specific values
 /// note: true_vals and false_vals are case insensitive.
@@ -71,7 +71,7 @@ T prompt(std::string_view prompt_text,
 
     while (true)
     {
-        basic_prompt(prompt_text, input_buf);
+        prompt(prompt_text, input_buf);
 
         // If the user says nothing, and the caller provides a default,
         // return the default value
@@ -101,7 +101,7 @@ T prompt(std::string_view prompt_text,
         }
         if (max.has_value() && value > max.value())
         {
-            std::println(stderr, "{} is lower than maximum value {}", value, max.value());
+            std::println(stderr, "{} is higher than maximum value {}", value, max.value());
             continue;
         }
 
