@@ -2,5 +2,8 @@
 build/**
 .cache/**
 
+# direnv cache
+.direnv/**
+
 # Compile commands symlink for IDEs
 compile_commands.json
